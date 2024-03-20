@@ -122,8 +122,8 @@ void deleteTask() {
         }
     }
 
-    if (isFound) {
-        for (i = taskToDelete - tasks; i < numberOfTasks - 1; i++) {
+    if (isFound) { 
+        for (i = taskToDelete; i < numberOfTasks - 1; i++) {
             tasks[i] = tasks[i + 1];
         }
         numberOfTasks--;
