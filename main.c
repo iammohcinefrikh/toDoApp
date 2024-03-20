@@ -17,7 +17,6 @@ void reset () {
 	printf("\033[0m");
 }
 
-// creating an struct, with Task named alias.
 typedef struct {
 	int id;
 	char name[50];
