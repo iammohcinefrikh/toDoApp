@@ -74,10 +74,10 @@ void editTask () {
     for (i = 0; i < numberOfTasks; i++) {
         if (tasks[i].id == taskId) {
             printf("-- Enter New Task Name: ");
-            scanf("%s", tasks[i].name);
+            scanf(" %[^\n]", tasks[i].name);
 
             printf("-- Enter New Task Description: ");
-            scanf("%s", tasks[i].description);
+            scanf(" %[^\n]", tasks[i].description);
 
             printf("-- Enter New Due Date (DD/MM/YYYY): ");
             scanf("%s", tasks[i].dueDate);
